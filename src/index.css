@@ -1,13 +1,225 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+hr{
+  color: #fff;
+}
+
+body{
+  background-image: url(../src/img/glitters.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.nav{
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+  border-radius: 6px;
+  padding: 5px 10px;
+}
+
+NavLink{
+  text-decoration: none;
+  list-style: none;
+  color: #ca296c;
+}
+/* ul {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+li {
+  list-style: none;
+} */
+
+/* .menu {
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+  position: fixed;
+  border-top: 1px solid #35FB8C;
+  border-bottom: 1px solid #76E202;
+  border-left: 1px solid #F9D42C;
+  border-right: 1px solid #E32624;
+  border-radius: 6px;
+  padding: 5px 10px;
+} */
+.active{
+  border-top: 1px solid #35FB8C;
+  border-bottom: 1px solid #76E202;
+  border-left: 1px solid #F9D42C;
+  border-right: 1px solid #E32624;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: #F9D42C;
+  text-decoration: none;
+}
+/* 
+.menu:hover {
+  border-top: 1px solid #35FB8C;
+  border-bottom: 1px solid #76E202;
+  border-left: 1px solid #F9D42C;
+  border-right: 1px solid #E32624;
+  border-radius: 6px;
+  padding: 5px 10px;
+  color: #F9D42C;
+} */
+
+.centrar-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.logo{
+  border-radius: 50%;
+}
+
+.titulo {
+  text-align: center;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+/* INDEX */
+
+.grid-mica {
+  height: auto;
+  display: grid;
+  grid-auto-rows: 20rem;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 30rem), 1fr));
+  gap: 20px;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 5%;
+
+}
+
+.mica-img{
+  border-radius: 10%;
+}
+
+.texto-mica {
+  font-family: 'Signika', sans-serif;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+/* CONTACTO */
+
+.formulario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 5%;
+}
+
+label {
+  margin-bottom: 6px;
+  font-weight: bold;
+}
+
+input {
+  border: none;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+textarea {
+  border: none;
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+
+
+.enviar {
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 300px;
+  width: 100%;
+  align-items: center;
+  font-size: 1.3em;
+  margin-top: 20px;
+  border-top: 1px solid #35FB8C;
+  border-bottom: 1px solid #76E202;
+  border-left: 1px solid #F9D42C;
+  border-right: 1px solid #E32624;
+  border-radius: 6px;
+}
+
+.enviar:hover {
+  background: linear-gradient(to bottom, #00f00b, #0283c4, #cd3894, #ffce34);
+  -webkit-background-clip: text;
+  color: transparent;
+  width: 300px;
+  width: 100%;
+  align-items: center;
+  font-size: 1.3em;
+  margin-top: 20px;
+  border-top: 1px solid #089244;
+  border-bottom: 1px solid #2f5a00;
+  border-left: 1px solid #0115c2;
+  border-right: 1px solid #fc8d8b;
+  border-radius: 6px;
+}
+
+
+
+/* PRODUCTOS */
+
+.productos--img{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 6px;
+  margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/* FOOTER */
+
+.ing {
+  font-size: 2em;
+  background: linear-gradient(#ca296c, #c00197);
+  -webkit-background-clip: text;
+  color: transparent;
 }
