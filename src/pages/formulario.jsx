@@ -61,7 +61,7 @@ const Formulario = () => {
 
 
     return (
-        <div className='m-5'>
+        <div className='m-5 container'>
             <h2 className='titulo mb-5'>
                 Contacta con Nosotros!
             </h2>
