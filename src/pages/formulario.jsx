@@ -65,7 +65,7 @@ const Formulario = () => {
             <h2 className='titulo mb-5'>
                 Contacta con Nosotros!
             </h2>
-            <Form className='row from-control'>
+
                 {Object.keys(inputs).map((key, index) => (
                     <Form.Group className="mb-3 formulario" key={index}>
                         <Form.Label id="from" className='texto-mica gap-5 mr-5'>
@@ -80,7 +80,7 @@ const Formulario = () => {
                         Enviar Datos
                     </Button>
                 </div>
-            </Form>
+
 
 
 
