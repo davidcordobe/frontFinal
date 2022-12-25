@@ -13,7 +13,7 @@ export const Home = (imagen) => {
                     <hr />
                     <br />
                     <br />
-                            <div className="grid-mica container mb-5">
+                            <div className="grid-mica container mb-5 mobile">
                                 <img src={require('../img/mica.jpg')} alt="Mica" class="mica-img" />
 
                                     <p className="texto-mica">Las micas son minerales pertenecientes a un grupo numeroso de silicatos de alúmina,
@@ -23,12 +23,12 @@ export const Home = (imagen) => {
                                         monoclínico. Generalmente se las encuentra en las rocas ígneas tales como el granito y las rocas
                                         metamórficas como el esquisto. Las variedades más abundantes son la biotita y la moscovita.</p>
 
-                                    <div>
+                                    <div className="container mb-5 mobile">
                                         <h3 className="texto-mica">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo error accusantium cum aliquam
                                             nemo alias impedit non, nihil explicabo accusamus sint! Nihil iure quae laborum fugiat facilis quod
                                             culpa.
                                         </h3>
-                                        <div>
+                                        <div >
                                             <p className="texto-mica">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum reiciendis deleniti quaerat deserunt
                                                 eligendi ea alias rem officia, repellendus delectus dolores ab dolorum, repudiandae possimus labore
                                                 repellat soluta vitae eaque.</p>
@@ -37,7 +37,7 @@ export const Home = (imagen) => {
                             </div>
                         </div>
 
-                        <div>
+                        <div className="grid-mica container mb-5 mobile">
                             <h3 className="texto-mica">
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos accusamus quam suscipit, eius ipsam unde
                                 quis aliquid. Natus similique harum nemo sed laudantium, eligendi dolorem illum repellendus qui! Asperiores,
